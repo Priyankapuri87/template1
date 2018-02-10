@@ -117,6 +117,7 @@ add_action( 'widgets_init', 'humescores_widgets_init' );
  * Enqueue scripts and styles.
  */
 function humescores_scripts() {
+    wp_enqueue_style('humescores-fonts',"https://fonts.googleapis.com/css?family=PT+Serif:400,700|Source+Sans+Pro:400,400i,600,700,700i");
 	wp_enqueue_style( 'humescores-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'humescores-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
